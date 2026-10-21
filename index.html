@@ -3,27 +3,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Coffee Hub</title>
-    <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="favicon.ico" sizes="any">      <!--favicon to show on the browser tab-->
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <nav>
         <div class="navigationheader">
             <div class="companylogo">
                 <a href="#">
-                    <img src="coffeeicon.png" alt="mainlogo" class="logolightmode">
+                    <img src="coffeeicon.png" alt="mainlogo" class="logolightmode"> <!--two logos to switch between light and dark-->>
+                    <img src="coffeeicondark.png" alt="darklogo" class="logodarkmode">
 
                 </a>
             </div>
-            <div class="navigationmenubutton" id="menubutton">
-                <i class="ri-menu-4-line"></i>
+            <div class="navigationmenubutton" id="menubutton">   <!--hamburger button addition-->
+                <i class="ri-menu-line"></i>
             </div>
         </div>
-        <ul class="navigationlinks" id="navlinks">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">SERVICES</a></li> 
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT US</a></li>
+        <ul class="navigationlinks" id="navlinks">               <!--the four main sections of the website-->
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
         </ul>
     </nav>
+
+    <header id="home">                                   <!--the section with heading, subtext and the CTA button-->
+        <div class = "headercoffeeimage">
+            <img src="headerimage.png" alt="header">
+        </div>
+        <div class = "headercontent">
+            <h2>The Coffee Hub Kenya</h2>
+            <h1>The best premium coffee in East Africa</h1>
+            <p>
+               Premium Kenyan coffee, sourced from local farmers and carefully
+                processed to bring rich flavour and exceptional aroma to every cup.
+            </p>
+            <div class = "headerbutton">
+                 <a href="#services">Take the Journey</a>
+            </div>
+            
+        </div>
+    </header>
+    <section class="about" id="about">                         <!--the about section of the website explaining everyrhing-->
+        <h2 class="sectionsubtitle">About Us</h2>
+        <h3 class="sectiontitle">Our Story Since 1996</h3>
+        <p class="abouttext">
+            The Coffee Hub began in 1996 with a small team and a simple idea:
+            buy coffee directly from local farmers, pay them fairly, and share
+            the best of Kenyan coffee with more people. In those early years we
+            worked with just a handful of growers.
+        </p>
+        <p class="abouttext">
+            As word spread, more farmers joined us and our customers grew with
+            them. Over the years we built our own processing facility and began
+            supplying cafés, restaurants and homes across Kenya and East Africa.
+        </p>
+        <p class="abouttext">
+            Today we partner with farming families across the country, and we
+            still believe what we started with: great coffee begins with the
+            people who grow it.
+        </p>
+    </section>
+     <section class="services" id="services">                <!--the services section explaining what the company does-->
+        <h2 class="sectionsubtitle">What We Do</h2>
+        <h3 class="sectiontitle">From the Farm to Your Cup</h3>
+
+        <div class="servicesgrid">
+            <div class="servicecard">
+                <img src="coffeefarm.jpg" alt="Coffee farm in Kenya">
+                <h4>Direct from Local Farmers</h4>
+                <p>
+                    We buy our coffee directly from local farmers across Kenya,
+                    paying fair prices for every harvest. By working straight
+                    with the growers, we support farming families and help
+                    local businesses grow alongside us.
+                </p>
+            </div>
+            <div class="servicecard">
+                <img src="coffeefactory.jpg" alt="The Coffee Hub processing facility">
+                <h4>Coffee Processing</h4>
+                <p>
+                    Our modern processing facilities keep every stage
+                    streamlined and efficient, from sorting and drying to
+                    grading and packing. Careful quality checks along the way
+                    make sure every batch keeps its rich flavour and aroma.
+                </p>
+            </div>
+
+            <div class="servicecard">
+                <img src="coffeesellingcafe.jpg" alt="Café serving The Coffee Hub coffee">
+                <h4>Coffee Distribution</h4>
+                <p>
+                    We are the exclusive coffee supplier to many of the most
+                    popular cafés and restaurants in Kenya. When you order a
+                    cup at one of the country's favourite spots, there is a
+                    good chance it started with us.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="stats">                                  <!--stats section showing different metrics of what the company has achieved-->
+        <div class="statsgrid">
+            <div class="statcard">
+                <span class="staticon"><i class="ri-scales-3-line"></i></span>
+                <h4><span class="num" data-val="12000">0</span>+</h4>
+                <p>Tonnes processed every year</p>
+            </div>
+
+            <div class="statcard">
+                <span class="staticon"><i class="ri-award-line"></i></span>
+                <h4><span class="num" data-val="30">0</span></h4>
+                <p>Years of service</p>
+            </div>
+
+            <div class="statcard">
+                <span class="staticon"><i class="ri-user-smile-line"></i></span>
+                <h4><span class="num" data-val="100000">0</span>+</h4>
+                <p>Satisfied customers</p>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials" id="testimonials">                    <!--a testimonial section showing the satisfaction of different clients with the services provided-->
+        <h2 class="sectionsubtitle">Testimonials</h2>
+        <h3 class="sectiontitle">What People Say About Us</h3>
+
+        <div class="testimonialslist">
+            <div class="testimonial">
+                <img src="testimonialone.jpg" alt="coffee farmer">
+                <div class="testimonialtext">
+                    <p>
+                        "For years The Coffee Hub has bought my harvest at a fair
+                        price, and they have never once paid me late. When I
+                        deliver my coffee, I know the money will come on time,
+                        and that lets me plan for my family and my farm."
+                    </p>
+                    <h4>- Goku Kakarot, Coffee Farmer</h4>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="testimonialtwo.jpg" alt="coffeeshopowner">
+                <div class="testimonialtext">
+                    <p>
+                        "The Coffee Hub always gives us the best premium coffee.
+                        Every cup we serve is rich and consistent, and that
+                        quality is what keeps our customers coming back day
+                        after day."
+                    </p>
+                    <h4>- Light Yagami, Coffee Shop Owner</h4>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="testimonialthree.jpg" alt="customer">
+                <div class="testimonialtext">
+                    <p>
+                        "I have been drinking The Coffee Hub's coffee every
+                        morning for the last ten years. I have tried many
+                        others, but nothing comes close. For me, it is simply
+                        the best coffee out there."
+                    </p>
+                    <h4>- Mikasa, Loyal Customer</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id = "contact"> <!--footer section with all the contacts, social media links and address-->
+        <div class="footercontainer">
+            <div class="footerabout">
+                <div class="footerlogo">
+                    <img src="coffeeicon.png" alt="The Coffee Hub logo">
+                </div>
+                <p>
+                    Processing and selling premium coffee in Kenya and across
+                    East Africa since 1996.
+                </p>
+            </div>
+
+            <div class="footercontact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="ri-map-pin-line"></i> Coffee Hub, Village Market, Nairobi, Kenya</li>
+                    <li><i class="ri-phone-line"></i> <a href="phoneno">+254 728 514 041</a></li>
+                    <li><i class="ri-mail-line"></i> <a href="emailaddress">bmwangi314@gmail.com</a></li>
+                    <li><i class="ri-time-line"></i> Mon to Sat, 8:00am to 6:00pm</li>
+                </ul>
+            </div>
+
+            <div class="footerlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>    <!--footer buttons to redirect to specific sections when at the bottom of the page-->
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footerbottom">
+            <p>Copyright © 2026 The Coffee Hub Kenya. All rights reserved.</p>
+            <ul class = "footersociallinks">
+                <li>
+                    <a href="https://www.facebook.com/benson.mwangi.184007" target="_blank" rel="noopener" aria-label="Facebook">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="ri-twitter-x-line"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/thisisbensonmwangi/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
 </body>
 </html>
