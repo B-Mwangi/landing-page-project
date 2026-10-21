@@ -5,11 +5,8 @@
   --maxwidth: 1500px;
 }
 
-
- /*Removes the browser's default spacing so every browser*/
-* {                               
-   starts the same. border-box makes padding count inside
-   an element's width instead of adding to it.
+/*Removes the browser's default spacing so every browser*/
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -46,7 +43,6 @@ footer {
   scroll-margin-top: 5rem;
 }
 
-
 /*phone and mobile devices*/
 nav {
   position: fixed;
@@ -69,12 +65,10 @@ nav {
   max-width: 100px;
 }
 
-
 /*hide dark logo and show light one on mobile devices*/
 .companylogo .logodarkmode {
   display: none;
 }
-
 
 /*The drop-down list of links on phones, it sits hidden behind the green bar and slides down when the menu is opened*/
 .navigationmenubutton {
@@ -128,7 +122,6 @@ header {
   margin-inline: auto;
 }
 
-
 /*small heading*/
 .headercontent h2 {
   font-size: 2rem;
@@ -147,7 +140,6 @@ header {
   text-align: center;
 }
 
-
 /*subtext*/
 .headercontent p {
   margin-bottom: 2rem;
@@ -157,13 +149,11 @@ header {
   text-align: center;
 }
 
-
 /*CTA button*/
 .headerbutton {
   margin-bottom: 5rem;
   text-align: center;
 }
-
 
 /*CTA button styling*/
 .headerbutton a {
@@ -189,7 +179,6 @@ footer {
   color: #ffffff;
 }
 
-
 /*Holds the three footer columns, about, contact, quick links, stacked on phones side by side on wider screens*/
 .footercontainer {
   max-width: var(--maxwidth);
@@ -199,8 +188,6 @@ footer {
   gap: 3rem;
   text-align: center;
 }
-
-
 
 .footerlogo img {
   max-width: 100px;
@@ -217,7 +204,6 @@ footer {
   font-size: 1.2rem;
   font-weight: 700;
 }
-
 
 /*Contact details and quick links listed with even spacing*/
 .footercontact ul,
@@ -265,7 +251,6 @@ footer a:hover {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-
 /*Full-width farm photo behind the text. The dark gradient layer on top of the photo makes the white text easy to read*/
 .about {
   padding: 6rem 1rem;
@@ -299,7 +284,6 @@ footer a:hover {
   margin: auto;
   padding: 5rem 1rem;
 }
-
 
 /*Shared section headings, reused by About, Services and Testimonials*/
 .sectionsubtitle {
@@ -360,8 +344,7 @@ footer a:hover {
   background-color: var(--primarycolour);
 }
 
-
- /*Holds the three stat cards, centred, with white text*/
+/*Holds the three stat cards, centred, with white text*/
 .statsgrid {
   max-width: var(--maxwidth);
   margin: auto;
@@ -396,14 +379,12 @@ footer a:hover {
   text-transform: uppercase;
 }
 
-
 /*testimonial section*/
 .testimonials {
   max-width: var(--maxwidth);
   margin: auto;
   padding: 5rem 1rem;
 }
-
 
 /*Holds the three testimonials with space between them*/
 .testimonialslist {
@@ -442,9 +423,8 @@ footer a:hover {
 }
 
 @media (width > 768px) {
-  
   /*Menu becomes a normal row at the top of the page, centred*/
-    nav {
+  nav {
     position: static;
     padding: 2rem 1rem 1rem;
     max-width: var(--maxwidth);
@@ -462,7 +442,6 @@ footer a:hover {
     max-width: 125px;
   }
 
-  
   /*Swap logos, show the dark one on the white background*/
   .companylogo .logodarkmode {
     display: flex;
@@ -472,8 +451,12 @@ footer a:hover {
     display: none;
   }
 
-
-  /*don't display hamburger on larger screens*/
+  /*don't
+    display
+    hamburger
+    on
+    larger
+    screens*/
   .navigationmenubutton {
     display: none;
   }
@@ -523,7 +506,6 @@ footer a:hover {
   .statsgrid {
     grid-template-columns: repeat(3, 1fr);
   }
-
 
   /*photo on the left, words on the right*/
   .testimonial {
