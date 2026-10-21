@@ -6,7 +6,7 @@
 }
 
 
- // Removes the browser's default spacing so every browser
+ /*Removes the browser's default spacing so every browser*/
 * {                               
    starts the same. border-box makes padding count inside
    an element's width instead of adding to it.
@@ -15,13 +15,13 @@
   box-sizing: border-box;
 }
 
-//Images fill the width of whatever box they are in
+/*Images fill the width of whatever box they are in*/
 img {
   display: flex;
   width: 100%;
 }
 
-//no underline, and colour changes fade in smoothly
+/*no underline, and colour changes fade in smoothly*/
 a {
   text-decoration: none;
   transition: 0.4s;
@@ -35,19 +35,19 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-//Makes menu links glide down to their section instead of jumping
+/*Makes menu links glide down to their section instead of jumping*/
 html {
   scroll-behavior: smooth;
 }
 
-//Leaves a gap above each section when a menu link scrolls to it so the fixed green menu bar on phones does not cover the heading
+/*Leaves a gap above each section when a menu link scrolls to it so the fixed green menu bar on phones does not cover the heading*/
 section,
 footer {
   scroll-margin-top: 5rem;
 }
 
 
-//phone and mobile devices
+/*phone and mobile devices*/
 nav {
   position: fixed;
   isolation: isolate;
@@ -64,19 +64,19 @@ nav {
   background-color: var(--primarycolour);
 }
 
-//Logo size on phones
+/*Logo size on phones*/
 .companylogo a img {
   max-width: 100px;
 }
 
 
-//hide dark logo and show light one on mobile devices
+/*hide dark logo and show light one on mobile devices*/
 .companylogo .logodarkmode {
   display: none;
 }
 
 
-//The drop-down list of links on phones, it sits hidden behind the green bar and slides down when the menu is opened.
+/*The drop-down list of links on phones, it sits hidden behind the green bar and slides down when the menu is opened*/
 .navigationmenubutton {
   font-size: 1.5rem;
   color: #ffff;
@@ -109,7 +109,7 @@ nav {
   white-space: nowrap;
 }
 
-//Centres the header and stacks the image and text in a grid
+/*Centres the header and stacks the image and text in a grid*/
 header {
   max-width: var(--maxwidth);
   margin: auto;
@@ -129,7 +129,7 @@ header {
 }
 
 
-//small heading
+/*small heading*/
 .headercontent h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -137,7 +137,7 @@ header {
   text-align: center;
 }
 
-//main heading
+/*main heading*/
 .headercontent h1 {
   margin-bottom: 1rem;
   font-size: 4rem;
@@ -148,7 +148,7 @@ header {
 }
 
 
-//subtext
+/*subtext*/
 .headercontent p {
   margin-bottom: 2rem;
   font-weight: 500;
@@ -158,14 +158,14 @@ header {
 }
 
 
-//CTA button
+/*CTA button*/
 .headerbutton {
   margin-bottom: 5rem;
   text-align: center;
 }
 
 
-//CTA button styling
+/*CTA button styling*/
 .headerbutton a {
   display: inline-block;
   padding: 1rem 1.5rem;
@@ -190,7 +190,7 @@ footer {
 }
 
 
-//Holds the three footer columns, about, contact, quick links, stacked on phones side by side on wider screens
+/*Holds the three footer columns, about, contact, quick links, stacked on phones side by side on wider screens*/
 .footercontainer {
   max-width: var(--maxwidth);
   margin: auto;
@@ -219,7 +219,7 @@ footer {
 }
 
 
-//Contact details and quick links listed with even spacing 
+/*Contact details and quick links listed with even spacing*/
 .footercontact ul,
 .footerlinks ul {
   display: grid;
@@ -266,7 +266,7 @@ footer a:hover {
 }
 
 
-//Full-width farm photo behind the text. The dark gradient layer on top of the photo makes the white text easy to read
+/*Full-width farm photo behind the text. The dark gradient layer on top of the photo makes the white text easy to read*/
 .about {
   padding: 6rem 1rem;
   background-image:
@@ -301,7 +301,7 @@ footer a:hover {
 }
 
 
-//Shared section headings, reused by About, Services and Testimonials
+/*Shared section headings, reused by About, Services and Testimonials*/
 .sectionsubtitle {
   margin-bottom: 0.5rem;
   font-size: 1rem;
@@ -361,7 +361,7 @@ footer a:hover {
 }
 
 
- //Holds the three stat cards, centred, with white text 
+ /*Holds the three stat cards, centred, with white text*/
 .statsgrid {
   max-width: var(--maxwidth);
   margin: auto;
@@ -397,7 +397,7 @@ footer a:hover {
 }
 
 
-//testimonial section
+/*testimonial section*/
 .testimonials {
   max-width: var(--maxwidth);
   margin: auto;
@@ -405,7 +405,7 @@ footer a:hover {
 }
 
 
-//Holds the three testimonials with space between them
+/*Holds the three testimonials with space between them*/
 .testimonialslist {
   display: grid;
   gap: 4rem;
@@ -443,7 +443,7 @@ footer a:hover {
 
 @media (width > 768px) {
   
-  //Menu becomes a normal row at the top of the page, centred
+  /*Menu becomes a normal row at the top of the page, centred*/
     nav {
     position: static;
     padding: 2rem 1rem 1rem;
@@ -463,7 +463,7 @@ footer a:hover {
   }
 
   
-  //Swap logos, show the dark one on the white background
+  /*Swap logos, show the dark one on the white background*/
   .companylogo .logodarkmode {
     display: flex;
   }
@@ -473,7 +473,7 @@ footer a:hover {
   }
 
 
-  //don't display hamburger on larger screens
+  /*don't display hamburger on larger screens*/
   .navigationmenubutton {
     display: none;
   }
@@ -519,13 +519,13 @@ footer a:hover {
     margin-inline: auto;
   }
 
-  //Stats: three in a row
+  /*Stats: three in a row*/
   .statsgrid {
     grid-template-columns: repeat(3, 1fr);
   }
 
 
-  //photo on the left, words on the right
+  /*photo on the left, words on the right*/
   .testimonial {
     flex-direction: row;
     max-width: 900px;
